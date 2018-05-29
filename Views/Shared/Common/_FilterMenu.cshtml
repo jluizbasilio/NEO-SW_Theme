@@ -16,10 +16,10 @@
                 </div>
                 <div class="column">
                     <div class="ui accordion" id="filtroList">
-                        @if (Model.References != null && Model.References.Count() > 0)
+                    @if (Model.Categories != null && Model.Categories.Count() > 1)
                         {
-                            <!-- Page: ~/Views/Shared/Blocks/Product/_ReferencesFilters.cshtml -->
-                            @Html.Partial("~/Views/Shared/Blocks/Product/_ReferencesFilters.cshtml", Model.References)
+                            <!-- Page: ~/Views/Shared/Blocks/Category/_CategoriesFilters.cshtml -->
+                            @Html.Partial("~/Views/Shared/Blocks/Category/_CategoriesFilters.cshtml", Model.Categories)
                         }
 
                         @if (Model.Brands != null && Model.Brands.Count() > 1)
@@ -28,11 +28,13 @@
                             @Html.Partial("~/Views/Shared/Blocks/Brand/_BrandsFilters.cshtml", Model.Brands)
                         }
 
-                        @if (Model.Categories != null && Model.Categories.Count() > 1)
+                        @if (Model.References != null && Model.References.Count() > 0)
                         {
-                            <!-- Page: ~/Views/Shared/Blocks/Category/_CategoriesFilters.cshtml -->
-                            @Html.Partial("~/Views/Shared/Blocks/Category/_CategoriesFilters.cshtml", Model.Categories)
+                            <!-- Page: ~/Views/Shared/Blocks/Product/_ReferencesFilters.cshtml -->
+                            @Html.Partial("~/Views/Shared/Blocks/Product/_ReferencesFilters.cshtml", Model.References)
                         }
+
+
 
                         @if (Model.Attributes != null && Model.Attributes.Count() > 0)
                         {

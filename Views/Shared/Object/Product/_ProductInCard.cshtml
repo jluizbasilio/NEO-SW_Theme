@@ -73,28 +73,28 @@
                 {
                     <a href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)" class="ui labeled icon button green fluid btn-comprar" data-idproduct="@Model.IdProduct" data-name="Model.Name">
                         <i id="btn-icon-card-Model.IdProduct" class="icon announcement"></i>
-                        Comprar
+                        Comprar produto
                     </a>
                 }
                 else if (Model.FlagExhausted || Model.Stock <= 0)
                 {
                     <a id="btn-comprar-card-@Model.IdProduct" class="ui labeled icon button grey fluid avise-card avise-me-modal" data-idproduct="@Model.IdProduct" data-name="@Model.Name">
                         <i id="btn-icon-card-@Model.IdProduct" class="icon announcement"></i>
-                        Avise-me
+                        Avise-me quando chegar
                     </a>
                 }
                 else if (Session["EventList"] != null)
                 {
                     <a id="add-event-list-@Model.IdProduct" class="ui labeled icon button green fluid add-event-list" data-idproduct="@Model.IdProduct" data-name="@Model.Name">
                         <i id="btn-icon-card-@Model.IdProduct" class="icon add to cart"></i>
-                        Adicionar à Lista
+                        Adicionar à Lista 
                     </a>
                 }
                 else
                 {
                     <a id="btn-comprar-card-@Model.IdProduct" class="ui labeled icon button green fluid btn-comprar-card" data-idproduct="@Model.IdProduct" data-name="@Model.Name">
                         <i id="btn-icon-card-@Model.IdProduct" class="icon add to cart"></i>
-                        Comprar
+                        Comprar produto
                     </a>
                 }
             </div>
@@ -132,7 +132,7 @@
                     </a>
                 *@
                 <a class="ui basic button right floated primary right floated mobile-fluid" href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)">
-                    <i class="icon search"></i>DETALHES
+                    <i class="icon search"></i>DETALHES DO PRODUTO
                 </a>
             </div>
         </div>

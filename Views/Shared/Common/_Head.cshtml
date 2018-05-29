@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="ui ten wide mobile six wide tablet four wide computer column">
                     <a href="@(Session["idEventList"] == null ? "/Home" : "#")">
-                        <img class="ui middle aligned image" src="/assets/image/logo/logo.png" alt="">
+                        @Html.Partial("Common/_JetLogo")
                     </a>
                 </div>
                 <div class="ui center aligned five wide tablet eight wide computer column searchcolumn">
